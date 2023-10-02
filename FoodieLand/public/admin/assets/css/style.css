@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+.body {
+    width: 100%;
+    background-color: #d3d3d3;
+}
+.side-menu {
+    position: fixed;
+    background: rgb(3, 99, 99);
+    width: 20vw;
+    min-height: 100vh;
+    padding-right:40px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+.brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.brand-name img{
+    width: 200px;
+    height:100px;
+    margin-top:50px;
+    margin-left: 20px;
+}
+
+.nav-items {
+  height: 10vh;
+ 
+}
+.nav-items ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(197, 194, 194);
+    justify-content: center;
+    border-radius: 3px;
+   
+}
+.nav-items ul li a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(197, 194, 194);
+    font-weight: 800;
+    font-size: 22px;
+    
+}
+.nav-items ul li:hover {
+   
+    box-shadow: 5px 5px 20px rgb(8, 81, 81);
+    border-radius: 5px;
+}
+
+.admin-container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    
+}
+.admin-container .header {
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background-color: rgb(193, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.admin-container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.admin-container .header .nav .search {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+.admin-container .header .nav .search input[type="text"] {
+    border: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    width: 50%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.admin-container .header .nav .search button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.admin-container .header .nav .search button img {
+    width: 100%;
+    height: 100%;
+
+}
+.admin-container .header .nav .user {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.admin-container .header .nav .user img {
+    width: 40px;
+    height: 40px;
+ 
+   
+}
+
+.admin-container .header .nav .user .img-case {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.admin-container .header .nav .user .img-case img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard {
+    margin-bottom: 50px;
+}
+
+.i-name {
+    color: #444a53;
+    padding: 30px 0 0 40px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 3%;
+}
+.values {
+    padding: 25px 80px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.values .val-box {
+    background: rgb(157, 198, 198);
+    width: 300px;
+    padding: 32px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
+.values .val-box i {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background: rgb(8, 8, 196);
+    margin-right: 15px;
+}
+.values .val-box:nth-child(1) {
+    background: #7b74ec;
+}
+.values .val-box:nth-child(2) {
+    background: #5c8af0;
+}
+.values .val-box:nth-child(3) {
+    background: #ea5d99;
+}
+.values .val-box:nth-child(4) {
+    background: #74daec;
+}
+.values .val-box:nth-child(5) {
+    background: #e0d974;
+}
+.values .val-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #282828;
+}
+.values .val-box span {
+    font-size: 18px;
+    color: #383737;
+}
+
+.charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 80px;
+}
+.charts-card {
+    background-color: #d4d9d9;
+    margin-bottom: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+    -webkit-column-break-inside: avoid;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
+.chart-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.logo {
+    width: 72px;
+    height: 42px;
+}
+
+.hero-section {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px;
+}
+.hero-col {
+    width: 45%;
+    height: 400px;
+}
+.hero-col h2 {
+    color: rgb(52, 51, 51);
+    font-size: 42px;
+    font-weight: 600;
+}
+.hero-col img {
+    height: 100%;
+    width: 100%;
+}
+
+/*form*/
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.form-group input[type="file"] {
+    color: #f14949;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style the submit button with a specific background color etc */
+.form-group input[type="submit"] {
+    background-color: teal;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.form-group input[type="submit"]:hover {
+    background-color: rgb(3, 81, 81);
+}
+
+/* Add a background color and some padding around the form */
+
+/*form*/
+/*table*/
+#useful {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#useful td,
+#useful th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#useful tr {
+    background-color: #fff;
+}
+
+#useful tr:hover {
+    background-color: #ddd;
+}
+
+#useful th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: teal;
+    color: white;
+}
+/*table*/
+
+.active {
+    color: red;
+}
+.border-class {
+    border: transparent;
+    color: black;
+    box-shadow: 5px 5px 10px rgb(175, 176, 176);
+    border-radius: 5px;
+}
+.header-order {
+    background-color: teal;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.item {
+    padding: 10px;
+    border-radius: 5px;
+}
+.item :nth-child(2) {
+    margin-right: 10%;
+}
+.item :nth-child(3) {
+    margin-right: 7%;
+}
+.back-container {
+    background-color: rgb(203, 236, 236);
+    box-shadow: 5px 5px 10px rgb(151, 217, 217);
+    border: none;
+    margin-top: 40px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+.back-container .form-group {
+    margin: 10px 0 0 5px;
+}
+.back-container .form-group select {
+    background-color: white;
+}
